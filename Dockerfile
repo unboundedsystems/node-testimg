@@ -16,4 +16,5 @@ RUN \
     add-apt-repository \
         "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable" && \
     apt-get update && \
-    apt-get install -y --no-install-recommends docker-ce
+    apt-get install -y --no-install-recommends docker-ce && \
+    npm install yarn@~1.13.0 -g
