@@ -1,4 +1,4 @@
-FROM node:10.11
+FROM node:10.15.3-stretch-slim
 
 RUN \
     echo deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main > /etc/apt/sources.list.d/ansible.list && \
@@ -7,10 +7,22 @@ RUN \
     apt-get install -y --no-install-recommends \
         ansible \
         apt-transport-https \
+        bzip2 \
         ca-certificates \
         curl \
+        g++ \
+        git \
         gnupg2 \
+        gyp \
+        iputils-ping \
+        less \
+        make \
+        pigz \
+        procps \
         software-properties-common \
+        unzip \
+        vim \
+        xz-utils \
     && \
     curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add - && \
     add-apt-repository \
