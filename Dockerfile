@@ -20,6 +20,7 @@ RUN \
         pigz \
         procps \
         software-properties-common \
+        ssh \
         unzip \
         vim \
         xz-utils \
@@ -29,4 +30,5 @@ RUN \
         "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable" && \
     apt-get update && \
     apt-get install -y --no-install-recommends docker-ce && \
-    npm install yarn@~1.13.0 -g
+    npm install yarn@~1.13.0 -g && \
+    apt-get clean
