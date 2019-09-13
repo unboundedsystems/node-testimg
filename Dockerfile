@@ -17,6 +17,7 @@ RUN \
         iputils-ping \
         less \
         make \
+        nginx-light \
         pigz \
         procps \
         software-properties-common \
