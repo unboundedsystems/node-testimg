@@ -17,6 +17,7 @@ RUN \
         iputils-ping \
         less \
         make \
+        moreutils \
         nginx-light \
         pigz \
         procps \
