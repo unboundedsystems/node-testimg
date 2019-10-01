@@ -1,4 +1,8 @@
+FROM raviqqe/muffet as muffet
+
 FROM node:10.15.3-stretch-slim
+
+COPY --from=muffet /muffet /usr/local/bin/muffet
 
 RUN \
     echo deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main > /etc/apt/sources.list.d/ansible.list && \
