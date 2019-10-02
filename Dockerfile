@@ -25,6 +25,7 @@ RUN \
         nginx-light \
         pigz \
         procps \
+        python-pip \
         software-properties-common \
         ssh \
         unzip \
