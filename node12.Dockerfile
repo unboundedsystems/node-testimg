@@ -1,6 +1,6 @@
 FROM raviqqe/muffet as muffet
 
-FROM node:10.15.3-stretch-slim
+FROM node:12.14.1-stretch-slim
 
 COPY --from=muffet /muffet /usr/local/bin/muffet
 
@@ -34,5 +34,4 @@ RUN \
         "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable" && \
     apt-get update && \
     apt-get install -y --no-install-recommends docker-ce && \
-    npm install yarn@~1.19.1 -g && \
     apt-get clean
