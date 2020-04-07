@@ -41,5 +41,9 @@ if [[ ${NODE_VER} =~ ^10 ]]; then
     npm install yarn@~1.21.1 -g
 fi
 
+# gcloud/gsutil
+curl https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-287.0.0-linux-x86_64.tar.gz | tar zxf - -C /usr/local
+echo ". /usr/local/google-cloud-sdk/completion.bash.inc" >> /root/.bashrc
+
 # Clean up
 apt-get clean
