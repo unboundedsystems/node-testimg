@@ -1,6 +1,6 @@
 ARG NODE_VER=10.0.0-stretch
 
-FROM raviqqe/muffet as muffet
+FROM raviqqe/muffet:2.2.1 as muffet
 
 FROM node:${NODE_VER}
 ARG NODE_VER
