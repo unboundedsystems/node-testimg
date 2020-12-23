@@ -1,4 +1,4 @@
-ARG NODE_VER=10.15.3-stretch-slim
+ARG NODE_VER=10.17-stretch-slim
 
 FROM raviqqe/muffet:2.2.1 as muffet
 
